@@ -1,0 +1,69 @@
+{
+    "name": "RightWallFollower",
+    "type": "dynamic",
+    "description": "A reliable robot that follows the right wall with enhanced sensing",
+    "shape": [
+        { "x": -10, "y": 10 },
+        { "x": 10, "y": 10 },
+        { "x": 15, "y": 0 },
+        { "x": 10, "y": -10 },
+        { "x": -10, "y": -10 }
+    ],
+    "friction": {
+        "collision": 0.5,
+        "linear": 10,
+        "rotational": 200
+    },
+    "sensors": [
+        {
+            "type": "range",
+            "location": { "x": 15, "y": 0 },
+            "direction": 0,
+            "range": 150,
+            "description": "Front center sensor"
+        },
+        {
+            "type": "range",
+            "location": { "x": 15, "y": -5 },
+            "direction": -0.3,
+            "range": 150,
+            "description": "Front left sensor"
+        },
+        {
+            "type": "range",
+            "location": { "x": 15, "y": 5 },
+            "direction": 0.3,
+            "range": 150,
+            "description": "Front right sensor"
+        },
+        {
+            "type": "range",
+            "location": { "x": 8, "y": 10 },
+            "direction": 1.5708,
+            "range": 150,
+            "description": "Right front sensor"
+        },
+        {
+            "type": "range",
+            "location": { "x": 0, "y": 10 },
+            "direction": 1.5708,
+            "range": 150,
+            "description": "Right middle sensor"
+        },
+        {
+            "type": "range",
+            "location": { "x": -8, "y": 10 },
+            "direction": 1.5708,
+            "range": 150,
+            "description": "Right back sensor"
+        }
+    ],
+    "color": "green",
+    "style": {
+        "fill": "#2E8B57",
+        "stroke": "#006400",
+        "stroke-width": "2"
+    },
+    "mass": 1.0,
+    "controller": "lib/my_robot.so"
+}

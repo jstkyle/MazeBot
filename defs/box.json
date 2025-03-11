@@ -1,0 +1,19 @@
+{
+    "name": "Starting Point",
+    "type": "static",
+    "description": "Starting point of life",
+    "shape": [
+        { "x": -50, "y": 50 },
+        { "x": 50, "y": 50 },
+        { "x": 50, "y": -50 },
+        { "x": -50, "y": -50 }
+    ],
+    "friction": {
+      "collision": 5,
+      "linear": 40,
+      "rotational": 600
+    },
+    "sensors": [],
+    "mass": 1,    
+    "controller": "lib/box.so"
+}

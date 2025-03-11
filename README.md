@@ -120,6 +120,7 @@ Potential enhancements for future versions:
 
 - This project was built using the Enviro framework: https://github.com/klavinslab/enviro
 - Inspiration and algorithms based on robotics literature on wall-following techniques
+- The maze environment is modified from [Odyssey Bot](https://github.com/inoejj/odyssey_bot/tree/main) repository, although none of the robot code from that project was used
 - Special thanks to the course instructor and TAs for their guidance
 
 ## License
